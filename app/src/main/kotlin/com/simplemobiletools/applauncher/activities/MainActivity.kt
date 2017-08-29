@@ -140,4 +140,9 @@ class MainActivity : SimpleActivity(), AddAppDialog.AddLaunchersInterface, Recyc
         super.onDestroy()
         preferences.isFirstRun = false
     }
+
+    override fun finish() {
+        // override it and never finish as a HOME screen
+        //super.finish()
+    }
 }
